@@ -82,7 +82,7 @@ class Dog extends Pet {
     }
 
     getInfo() {
-        return `${this.name} the ${this.species} is ${this.age} years old. ${this.name} is a ${this.breed}. `;
+        return super.getInfo() + `${this.name} is a ${this.breed}. `;
     }
 }
 
